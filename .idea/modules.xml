@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Microservice/Microservice.iml" filepath="$PROJECT_DIR$/Microservice/Microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProductService/ProductService.iml" filepath="$PROJECT_DIR$/ProductService/ProductService.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringWeb.iml" filepath="$PROJECT_DIR$/.idea/SpringWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configServer/configServer.iml" filepath="$PROJECT_DIR$/configServer/configServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
     </modules>
   </component>

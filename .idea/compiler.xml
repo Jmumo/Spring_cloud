@@ -11,9 +11,11 @@
         <module name="ProductService" />
         <module name="eureka" />
         <module name="Gateway" />
+        <module name="configServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="configServer" target="11" />
       <module name="eureka" target="11" />
       <module name="Gateway" target="11" />
       <module name="Microservice" target="11" />
@@ -25,6 +27,7 @@
       <module name="Gateway" options="-parameters" />
       <module name="Microservice" options="-parameters" />
       <module name="ProductService" options="-parameters" />
+      <module name="configServer" options="-parameters" />
       <module name="eureka" options="-parameters" />
     </option>
   </component>
