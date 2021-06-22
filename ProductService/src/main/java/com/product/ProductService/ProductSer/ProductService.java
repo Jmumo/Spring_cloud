@@ -1,5 +1,6 @@
 package com.product.ProductService.ProductSer;
 
+
 import com.product.ProductService.CouponClient.CouponClient;
 import com.product.ProductService.Models.Product;
 import com.product.ProductService.ProductRepo.ProductRepo;
@@ -15,7 +16,9 @@ public class ProductService {
 
     @Autowired
     CouponClient couponClient;
+
     @Retry(name="Product",fallbackMethod = "handleError")
+
     public Product save(Product product) {
         Coupon coupon =couponClient.getCoupon(product.getCouponCode());
         product.setPrice(product.getPrice().subtract(coupon.getDiscount()));
@@ -23,6 +26,11 @@ public class ProductService {
     }
 
     public Product handleError(Product product,Exception exception){
+
+        return product;
+    }
+
+    public Product hystrixfallback(Product product,Exception exception){
         return product;
     }
 
